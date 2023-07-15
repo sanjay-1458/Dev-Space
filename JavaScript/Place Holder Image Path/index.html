@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main">
+  <h1>
+    Placeholder Image Path Generator
+  </h1>
+  <div id="part1">
+    <label for="selectimage">Image Size:</label>
+    <select id="selectimage">
+      <option selected="selected" value="">--Select Size--</option>
+      <optgroup label="Small">
+        <option value="100X50">Small (100*50)</option>
+      </optgroup>
+      <optgroup label="Medium">
+        <option value="200X200">Medium Square (200X200)</option>
+      <option value="350X150">Medium (350X150)</option>
+      
+      </optgroup>
+      <optgroup label="Large">
+        <option value="400X400">Large Square (400X400)</option>
+      <option value="650X350">Large (650X350)</option>
+      <option value="800X600">X-Large (800X600)</option>
+      
+      </optgroup>
+      <optgroup label="HD">
+        <option value="1920X1080">Full HD (1920X1080)</option>
+      </optgroup>
+    </select>
+  </div >
+  <div class="parent" id="part2">
+    <form method="get">
+      <label for="imagename">Text on image: </label>
+      <input type="text" placeholder="Image Text" name="imagetext" id="imagetext">
+    </form>
+  </div>
+  <div class="parent" id="part3">
+    <form method="get">
+      <label for="backcolor">Background Color: </label>
+      <input type="color" name="backcolor" id="backcolor" class="style1" value="#98bc62">
+    </form>
+  </div>
+  <div class="parent" id="part4">
+    <form method="get">
+      <label for="textcolor">Text Color: </label>
+      <input type="color" name="textcolor" id="textcolor" class="style1" value="#2c5f2d">
+    </form>
+  </div>
+  <div class="container" id="part5"> 
+    <img src="" alt="">
+    <br>
+    <label for="urlPath"></label>
+    <textarea name="" id="url" rows="2" cols="30">Link</textarea>
+  </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
