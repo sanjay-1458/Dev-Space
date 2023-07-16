@@ -1,0 +1,101 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to right bottom,#ca6dda,#45c5d0);
+    color:#fff;
+}
+.container {
+    border: 0.5px solid rgb(255, 255, 255);
+    padding:30px 35px;
+    display:flex;
+    flex-direction:column;
+    border-radius:10px;
+    background: transparent;
+    box-shadow:1px -4px 10px rgb(134, 74, 177),3px 1px 10px rgb(91, 42, 169);
+}
+.container h1{
+    font-size:1.6rem;
+    margin-top:8px;
+    margin-bottom:8px;
+}
+.passBox {
+    background-color: #fff;
+    border:0.5px solid rgba(157, 73, 183, 0.751);
+    outline:none;
+    padding: 12px;
+    width:350px;
+    border-radius:5px;
+    font-size:20px;
+    color:black;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-block:8px;
+}
+.row {
+    display: flex;
+    justify-content:space-between;
+    margin-block:5px;
+}
+.row p, .row label{
+    font-size:18px;
+}
+.row p{
+    color:rgb(226, 254, 255)
+}
+.row input[type="checkbox"]{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+.genButton {
+    border:0.5px solid rgba(163, 61, 206, 0.751);
+    /* height:30px; */
+    outline:none;
+    margin-top:10px;
+    font-size:1.2rem;
+    letter-spacing: 0.6px;
+    border-radius:5px;
+    padding: 8px 24px;
+    background-color: #332db0;
+    color:#fff;
+    font-weight:550;
+    cursor:pointer;
+    transition:0.2s ease-in-out;
+}
+.genButton:hover{
+    background-color: rgb(59, 59, 229);;
+}
+.container input[type="range"]{
+    cursor:pointer;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+.inputBox{
+    position:relative;
+}
+.inputBox span{
+    position:absolute;
+    top:18px;
+    right:10px;
+    color:#000;
+    font-size:26px;
+    cursor:pointer;
+}
+.inputBox span:hover{
+    color:rgb(52, 68, 170);
+}
