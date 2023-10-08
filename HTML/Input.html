@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input</title>
+    </head>
+    <body>
+        <label for="text">Name (4 to 8 characters):</label>
+        <input type="text" id="text" name="text" placeholder="name" required minlength="4" maxlength="8" size="14">
+        <br>
+        <input type="button" value="Add to favorites">
+        <br>
+        <fieldset>
+            <legend>Button group</legend>
+            <input type="button" value="Button 1">
+            <input type="button" value="Button 2">
+            <input type="button" value="Button3">
+        </fieldset>
+        <fieldset>
+            <legend>Choose your monster's features:</legend>
+            <label><input type="checkbox" name="scales">Scales</label>
+            <input type="checkbox" id="horns" name="horns">
+            <label for="horns">Horns</label>
+        </fieldset>
+        <form>
+            <div><input type="checkbox" id="sub" name="sun" value="sub">
+                <label for="sub">Subscribe!</label>
+            </div>
+            <div>
+                <button type="submit">Subscribe</button>
+            </div>
+        </form>
+        <fieldset>
+            <legend>Choose your interests</legend>
+            <div>
+                <input type="checkbox" value="coding" name="coding" id="coding">
+                <label for="coding">Coding</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="music" id="music">Music</label>
+            </div>
+        </fieldset>
+        <p>Choose your monster's colors:</p>
+        <div>
+            <input type="color" id="head" name="head" value="#ff0000">
+            <label for="head">Head</label>
+        </div>
+        <div>
+            <label><input type="color" name="body" value="#00ff0f"> Body</label>
+        </div>
+        <!--Date format year-month-date-->
+        <label for="start">Start date:</label>
+        <input type="date" id="start" min="2025-01-01" max="2025-03-03" value="2025-02-02" name="start">
+        <form action="https://www.google.com">
+            <label for="birt">Enter your birthday: </label>
+            <input type="date" max="2099-12-25" name="birt" id="birt">
+            <p><button>Submit</button></p>
+        </form>
+        <form>
+            <label for="party">Choose your preferred party date (required, April 1st to 20th): </label>
+            <input type="date" name="party" id="party" value="2025-04-07" min="2025-04-01" max="2025-04-20">
+            <p><button>Submit</button></p>
+        </form>
+        <label for="picture">Choose a profile picture: </label>
+        <input type="file" id="picture" name="picture" accept=".jpg .png">
+        <p>Sign in to your account:</p>
+        <label for="id">User ID </label>
+        <input type="text" placeholder="user_id" name="id" id="id"><br>
+        <input type="image" src="https://www.wallpapers13.com/wp-content/uploads/2015/12/Nature-Lake-Bled.-Desktop-background-image.jpg"
+        alt="login" id="image" height="30px"><br>
+        <label for="tentacles">Number of tentacles (10-100):</label>
+        <input type="number" value="13" min="10" max="100" step="1" id="tentacles" name="tentacles">
+        <br>
+        <label for="multiple">Multiple of 10: </label>
+        <input type="number" placeholder="X10" min="0" value="" max="120" step="10" id="multiple" name="multiple">
+		<br>
+		<p>datalist -> id == input list</p>
+		<input id="ticket" name="ticket" type="number" list="datalist">
+		<datalist id="datalist" >
+			<option value="123">123</option>
+			<option vlaue="124">124</option>
+			<option value="777">777</option>
+		</datalist>
+		<br>
+		<br>
+		<div>
+			<label for="username">Username</label><br>
+			<input type="password" id="username" name="username">
+		</div>
+		<div>
+			<label for="password">Password (8 characters minimum): </label><br>
+			<input type="password" id="password" name="password" minlength="8">
+		</div>
+		<input type="submit" value="Sign in">
+		<div>
+			<label for="pin">PIN:</label>
+			<input type="password" minlength="4" maxlength="8" name="pin" id="pin" size="8">
+		</div>
+		<!--Name of input in radio should be same and in same scope-->
+		<fieldset>
+			<legend>Select a maintenance drone:</legend>
+			<div>
+				<input type="radio" name="drone" id="huey">
+				<label for="huey">Huey</label>
+			</div>
+			<div>
+				<input type="radio" name="drone" id="dewey">
+				<label for="dewey">Dewey</label>
+			</div>
+			<div>
+				<input type="radio" name="drone" id="louie">
+				<label for="louie">Louie</label>
+			</div>
+		</fieldset>
+		<p>Audio settings: </p>
+		<div>
+			<input type="range" name="vol" id="vol" min="0" max="100" value="50">
+			<label for="vol">Volume</label>
+		</div>
+		<div>
+			<input type="range" name="cow" id="cow" min="8" max="64" step="8" value="24">
+			<label for="cow">Cowbell</label>
+		</div>
+		<label for="temp">Choose a comfortable temperature:</label><br>
+		<input type="range" min="0" max="100" value="50" id="temp" name="temp" list="comft">
+		<datalist id="comft">
+			<option value="0"></option>
+			<option value="25"></option>
+			<option value="50"></option>
+			<option value="75"></option>
+			<option value="100"></option>
+		</datalist>
+		<p>
+			<label for="room1">Temperature for room 1: </label>
+			<input type="range" min="0" max="100" step="5" name="room1" id="room1" value="50" list="rooms">
+		</p>
+		<p>
+			<label for="room2">Temperature for room 2: </label>
+			<input type="range" min="0" max="100" step="5" name="room2" id="room2" value="50" list="rooms">
+		</p>
+		<p>
+			<label for="room3">Temperature for room 3: </label>
+			<input type="range" min="0" max="100" step="5" name="room3" id="room3" value="50" list="rooms">
+		</p>
+		<datalist id="rooms">
+			<option value="0"></option>
+			<option value="25"></option>
+			<option value="50"></option>
+			<option value="75"></option>
+			<option value="100"></option>
+		</datalist>
+    </body>
+</html>
