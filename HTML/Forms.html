@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+    </head>
+    <body>
+        <label for="text">Click me to focus on the input field </label>
+        <input type="text" name="text" id="text"/>
+        <br>
+        <br>
+        <form action="" method="get">
+            <div class="form">
+                <label for="name">
+                    Enter your name: 
+                    <input type="text" id="name" name="name"/>
+                </label>
+            </div>
+            <br>
+            <div class="form">
+                <label for="pass">Enter your password: </label>
+                <input type="password" id="pass" name="pass">
+            </div>
+            <br>
+            <div class="form">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <br>
+        <div>
+            <form>
+                <label for="name1">Name:</label>
+                <input type="text" id="name1" name="name1" placeholder="..."/>
+                <button>Save</button>
+            </form>
+            <br>
+            <form>
+                <label for="name2">Name:</label>
+                <input type="text" id="name2" name="name2"/>
+                <button>Save</button>
+            </form>
+            <br>
+            <!--For multiple radio use same name and scope is till form-->
+            <form>
+                <fieldset>
+                    <legend>Do you agree to the terms?</legend>
+                    <label for="yes">Yes<input type="radio" value="yes" name="radio" id="yes"></label>
+                    <label for="no">No<input type="radio" value="no" name="radio" id="no"></label>
+                </fieldset>
+            </form>
+        </div>
+        <br>
+        <form>
+            <div class="cheese">
+                <label for="cheese">Do you like cheese? </label>
+                <input type="checkbox" id="cheese" name="cheese"/>
+            </div>
+            <div class="peas">
+                <label>Do you like peas? <input type="checkbox" name="pead"></label>
+            </div>
+        </form>
+        <br>
+        <label for="terms">
+            <input type="checkbox" id="terms" name="t-and-c">
+            I agree to the Terms and Conditions
+        </label>
+        <p>
+            <a href="xyz.thml">Read our Terms and Conditions</a>
+        </p>
+        <br>
+    </body>
+</html>
